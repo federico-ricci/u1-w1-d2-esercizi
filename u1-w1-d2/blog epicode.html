@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog epicode</title>
+  <!-- la tabella fa diventare il foglio bianco -->
+  </head>
+  <body>
+    <header>
+      <img src="./assets/img/logo.svg" alt="logo epicode" />
+      <h1>EPICODE - il blog dei developers</h1>
+      <!-- non capisco se i menu devono essere interattivi -->
+      <nav>
+        <ul>
+          <il>home</il>
+          <il>articoli</il>
+          <il>Lavora con noi</il>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <article>
+          <h3>come creare un template per i post</h3>
+          <p>
+            la prima cosa da fare è suddividere in blocchi logici la pagina,
+            identificando le parti comuni da applicare a tutte le pagine
+          </p>
+
+          le varie aree saranno quindi suddivise in:
+          <ul>
+            <!-- prettier mi da come errore i caratteri speciali anche se funzionano -->
+            <li>contenuti di interazione del tag &lt header &gt. </li>
+            <li>contenuti centrali variabili del tag &lt main &gt &#x28 corpo principale &#x29. </li>
+            <li>contenuti di fine pagina comuni, da inserire nel tag &lt footer &gt.</li>
+          </ul>
+          <div></div>
+          <h3>formattazione del codice</h3>
+          <p>
+            il testo dell'articolo dovrà essere formattato per identificare
+            tutte le parti da selezionare con i css. perciò i passi saranno:
+          </p>
+          <ol>
+            <li>
+              progettare il markup assegnando ad ogni specifico testo il tag
+              appropriato
+            </li>
+            <li>
+              scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso
+              il basso
+            </li>
+            <li>applicare gli stili CSS</li>
+          </ol>
+          <p>
+            L'applicazione di stili di CSS è cresciuta negli anni fino a
+            raggiungere la diffusione pressochè totale.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <p>diffusione dei CSS</p>
+                <th>anno</th>
+                <th>% di utilizzo</th>
+                <th>Supporto browser</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2000</td>
+                <td>20%</td>
+                <td>17%</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>2002</td>
+                <td>35%</td>
+                <td>22%</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>2004</td>
+                <td>45%</td>
+                <td>42%</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>2008</td>
+                <td>80%</td>
+                <td>51%</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>2012</td>
+                <td>100%</td>
+                <td>76%</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- lo span non ha evidenziato il testo -->
+          <p>
+            un test di validazione potrà essere fatto tramite il tool online
+            <span>-LINK ESTERNO-</span> dedicato allo scopo. una volta
+            ottimizzato il tutto.avremmo raggiunto il nostro obbiettivo ede
+            essere stati dei veri developers come loro:
+          </p>
+          <iframe
+            width="530"
+            height="315"
+            src="https://www.youtube.com/embed/xq0mYBJypMM?si=ISbWgeu3qtSe6BoH"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </article>
+        <p>
+          Vuoi rimanere aggiornato su altre novità del blog? iscriviti alla
+          nostra newsletter:
+        </p>
+        <form>
+          <div>
+            <label for="campo-email"> inserisci l'email </label>
+            <input type="email" id="email"
+          </div>
+          <div>
+            <button type="submit">iscriviti</button>
+          </div>
+          <div>
+              <article>
+                  <aside>
+                      <h3>Articoli correlati</h3>
+                      <div>
+                          <p>Validare il codice HTML </p>
+                          Categoria: develop Data: 18-9-2020 
+                        </div>
+                        <div>
+                            <p>Correggere la sintassi nella pagina</p>
+                            develop Data: 16-9-2020
+                        </div>
+                        <div>
+                            <p>meno kb nella pagina</p>
+                            Categoria: ottimizzazione Data: 30-9-2020
+                        </div>
+                    </aside>
+                </article>
+            </div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <p>Blog Copyright &copy; epicode 2023</p>
+      <p>
+        Testata online di Mario Rossi, registrata con prot. n213/2018- via luigi
+        enaudi 2- Milano. P.IVA 00112233.
+        <a href="info@epicode.school" id="email">info@epicode.school</a>
+      </p>
+    </footer>
+  </body>
+</html>
